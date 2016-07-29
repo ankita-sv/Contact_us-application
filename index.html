@@ -1,0 +1,26 @@
+<html>
+<head>
+<title>Database</title>
+<script>
+var {ipcRenderer} = require('electron');
+function adduser()
+{
+  ipcRenderer.send('Request from index');
+}
+</script>
+<script src='data.js'></script>
+</head>
+<body>
+  <button onclick="adduser()">Add user</button>
+  <br>
+  <button onclick="table()">Refresh</button>
+  <br>
+  <button onclick="deletedb()">Delete DB</button>
+  <br>
+  <div id='showtable'><script>
+  table();
+  </script> </div>
+
+
+</body>
+</html>

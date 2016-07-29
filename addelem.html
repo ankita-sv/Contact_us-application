@@ -1,0 +1,45 @@
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Fill in</title>
+
+  <script>
+  var {ipcRenderer} = require('electron');
+	function getValue()
+	{
+		a=document.getElementById('nm').value;
+		b=document.getElementById('address').value;
+		c=document.getElementById('email').value;
+		d=document.getElementById('cno').value;
+		persistProducts11(a,b,c,d);
+    ipcRenderer.send("Request from addelem");
+	}
+  </script>
+
+</head>
+<body>
+  <form name='form1'>
+    <div>
+      Name:
+    <input type="text" id="nm" name="Name" value="" placeholder="Name" >
+      </div>
+  <div>
+    Address:
+  <input type="text" id="address" name="Address" value="" placeholder="Address"  >
+</div>
+  <div>
+    Email:
+    <input type="text" id="email" name="Email" value=""  placeholder="Your Email" >
+  </div>
+  <div>
+    Contact Number:
+    <input type="text" id="cno" name="contactnumber" value=""  placeholder="Your Contact Number" >
+  </div>
+  <div>
+    <button onclick="getValue()" >Save</button>
+  </div>
+  <form>
+<script src="data.js"></script>
+</body>
+</html>
