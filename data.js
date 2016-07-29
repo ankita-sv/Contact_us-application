@@ -43,7 +43,8 @@ function persistProducts11(uname,uadd,uemail,ucno) {
             name : uname,
             address : uadd,
             Email: uemail,
-            Cno: ucno
+            Cno: ucno,
+            pin: upin
         }];
 
         data.forEach(function(product) {
@@ -66,7 +67,8 @@ function persistProducts() {
           name:  "Rohit",
           address :"Durgapur",
           Email: "Rohit@abc.com",
-          Cno: "23467"
+          Cno: "23467",
+          pin: "713202"
         }];
 
         data.forEach(function(product) {
