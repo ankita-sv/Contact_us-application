@@ -22,22 +22,23 @@
   <form name='form1'>
     <div>
       Name:
-    <input type="text" id="nm" name="Name" value="" placeholder="Name" >
+    <input type="text" id="nm" name="Name" value="" placeholder="Name" required/>
       </div>
   <div>
     Address:
-  <input type="text" id="address" name="Address" value="" placeholder="Address"  >
+  <input type="text" id="address" name="Address" value="" placeholder="Address"  required/>
 </div>
   <div>
     Email:
-    <input type="text" id="email" name="Email" value=""  placeholder="Your Email" >
+    <input type="text" id="email" name="Email" value=""  placeholder="Your Email" required="Email can't be blank"/>
   </div>
   <div>
     Contact Number:
-    <input type="text" id="cno" name="contactnumber" value=""  placeholder="Your Contact Number" >
+    <input type="text" id="cno" name="contactnumber" value=""  placeholder="Your Contact Number" required="please fill this"/>
   </div>
   <div>
-    <button onclick="getValue()" >Save</button>
+  <button onclick="getValue()" >Save</button>
+
   </div>
   <form>
 <script src="data.js"></script>
