@@ -12,8 +12,7 @@
 		b=document.getElementById('address').value;
 		c=document.getElementById('email').value;
 		d=document.getElementById('cno').value;
-		d=document.getElementById('pin').value;
-		persistProducts11(a,b,c,d,e);
+		persistProducts11(a,b,c,d);
     ipcRenderer.send("Request from addelem");
 	}
   </script>
@@ -23,27 +22,22 @@
   <form name='form1'>
     <div>
       Name:
-    <input type="text" id="nm" name="Name" value="" placeholder="Name" required/>
+    <input type="text" id="nm" name="Name" value="" placeholder="Name" >
       </div>
   <div>
     Address:
-  <input type="text" id="address" name="Address" value="" placeholder="Address"  required/>
+  <input type="text" id="address" name="Address" value="" placeholder="Address"  >
 </div>
   <div>
     Email:
-    <input type="text" id="email" name="Email" value=""  placeholder="Your Email" required="Email can't be blank"/>
+    <input type="text" id="email" name="Email" value=""  placeholder="Your Email" >
   </div>
   <div>
     Contact Number:
-    <input type="text" id="cno" name="contactnumber" value=""  placeholder="Your Contact Number" required="please fill this"/>
+    <input type="text" id="cno" name="contactnumber" value=""  placeholder="Your Contact Number" >
   </div>
-	<div>
-	pincode
-		<input type="text" id="pin" name="pincode" value=""  placeholder="Your pincode" >
-	</div>
   <div>
-  <button onclick="getValue()" >Save</button>
-
+    <button onclick="getValue()" >Save</button>
   </div>
   <form>
 <script src="data.js"></script>
