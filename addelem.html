@@ -12,7 +12,8 @@
 		b=document.getElementById('address').value;
 		c=document.getElementById('email').value;
 		d=document.getElementById('cno').value;
-		persistProducts11(a,b,c,d);
+		d=document.getElementById('pin').value;
+		persistProducts11(a,b,c,d,e);
     ipcRenderer.send("Request from addelem");
 	}
   </script>
@@ -36,6 +37,10 @@
     Contact Number:
     <input type="text" id="cno" name="contactnumber" value=""  placeholder="Your Contact Number" required="please fill this"/>
   </div>
+	<div>
+	pincode
+		<input type="text" id="pin" name="pincode" value=""  placeholder="Your pincode" >
+	</div>
   <div>
   <button onclick="getValue()" >Save</button>
 
